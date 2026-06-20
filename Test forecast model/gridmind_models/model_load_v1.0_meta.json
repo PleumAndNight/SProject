@@ -1,0 +1,54 @@
+{
+  "model_name": "LOAD_LGBM",
+  "model_version": "v1.0",
+  "site_id": "site-01",
+  "features": [
+    "temp_c",
+    "hour",
+    "month",
+    "dayofweek",
+    "is_weekend",
+    "load_lag_24h",
+    "load_lag_7d"
+  ],
+  "feature_hash": "0a78661d",
+  "hyperparameters": {
+    "n_estimators": 1200,
+    "learning_rate": 0.02,
+    "num_leaves": 63,
+    "max_depth": 10
+  },
+  "training_samples": 41281,
+  "date_range": "2025-01-08 01:00:00+07:00 to 2026-03-31 23:45:00+07:00",
+  "avg_mape": 19.37,
+  "avg_rmse": 11.75,
+  "fold_mapes": [
+    21.88,
+    17.57,
+    17.97,
+    14.77,
+    24.67
+  ],
+  "fold_rmses": [
+    12.63,
+    11.8,
+    10.99,
+    9.0,
+    14.36
+  ],
+  "feature_importance": {
+    "temp_c": 23.33,
+    "load_lag_24h": 21.05,
+    "load_lag_7d": 20.74,
+    "month": 12.79,
+    "hour": 12.0,
+    "dayofweek": 9.84,
+    "is_weekend": 0.25
+  },
+  "drift_alerts": [
+    "temp_c",
+    "month"
+  ],
+  "deploy_status": "deploy",
+  "trained_at": "2026-05-10T00:08:59.801034+00:00"
+}

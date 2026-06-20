@@ -1,0 +1,58 @@
+{
+  "model_name": "SOLAR_LGBM",
+  "model_version": "v1.0",
+  "site_id": "site-01",
+  "features": [
+    "ghi_api_wm2",
+    "kt",
+    "temp_c",
+    "cloud_cover_pct",
+    "hour",
+    "month",
+    "solar_lag_24h",
+    "panel_temp"
+  ],
+  "feature_hash": "d88150b3",
+  "hyperparameters": {
+    "n_estimators": 1000,
+    "learning_rate": 0.03,
+    "num_leaves": 45,
+    "max_depth": 9
+  },
+  "training_samples": 19764,
+  "date_range": "2025-01-02 07:00:00+07:00 to 2026-03-31 18:00:00+07:00",
+  "avg_mape": 14.95,
+  "avg_rmse": 6.74,
+  "fold_mapes": [
+    5.93,
+    5.12,
+    6.1,
+    7.78,
+    49.85
+  ],
+  "fold_rmses": [
+    3.58,
+    3.52,
+    4.32,
+    6.3,
+    15.97
+  ],
+  "feature_importance": {
+    "ghi_api_wm2": 18.63,
+    "solar_lag_24h": 14.91,
+    "panel_temp": 14.62,
+    "temp_c": 13.97,
+    "cloud_cover_pct": 13.1,
+    "kt": 12.41,
+    "month": 6.58,
+    "hour": 5.78
+  },
+  "drift_alerts": [
+    "temp_c",
+    "month"
+  ],
+  "installed_kwp": 126.0,
+  "noct": 45,
+  "deploy_status": "deploy",
+  "trained_at": "2026-05-10T00:08:57.131655+00:00"
+}
