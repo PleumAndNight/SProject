@@ -219,7 +219,4 @@ OPEN_METEO_API_URL=https://api.open-meteo.com/v1/forecast
 - **การวัดผล:** MAPE (Mean Absolute Percentage Error) และ RMSE (Root Mean Squared Error)
 - **กระบวนการ Retraining:** รันอัตโนมัติเป็นรายวัน เพื่อให้โมเดลปรับตัวตามข้อมูลและสภาพอากาศที่เปลี่ยนแปลง
 
-## 👥 ผู้พัฒนา
-
-โปรเจกต์นี้พัฒนาโดย [PleumAndNight](https://github.com/PleumAndNight)
 
